@@ -1,0 +1,4 @@
+<h1>{{ book.title }}</h1>
+<h2>{{ book.author }}</h2>
+<p><a href="{% url 'books:book_delete' book.pk %}">Удалить</a></p>
+<p><a href="{% url 'books:book_update' book.pk %}">Обновить</a></p>

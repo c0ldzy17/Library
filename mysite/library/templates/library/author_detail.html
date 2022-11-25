@@ -1,0 +1,6 @@
+{% load static %}
+
+<h1>{{ author.name }}</h1>
+<h2>Birth date: {{ author.birth_date }}</h2>
+<p><a href="{% url 'books:author_delete' author.pk %}">Удалить</a></p>
+<p><a href="{% url 'books:update_author' author.pk %}">Обновить</a></p>
